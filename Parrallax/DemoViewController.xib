@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DemoViewController" customModule="Parrallax" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gS-17-Rpx">
+                    <rect key="frame" x="168.5" y="403.5" width="38" height="30"/>
+                    <state key="normal" title="Long"/>
+                    <connections>
+                        <action selector="longTapped:" destination="-1" eventType="touchUpInside" id="tIn-Bb-faN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMN-MJ-rVp">
+                    <rect key="frame" x="168.5" y="253.5" width="38" height="30"/>
+                    <state key="normal" title="Short"/>
+                    <connections>
+                        <action selector="shortTapped:" destination="-1" eventType="touchUpInside" id="uow-3l-W11"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4gS-17-Rpx" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="8lR-8O-Ojb"/>
+                <constraint firstItem="QMN-MJ-rVp" firstAttribute="height" secondItem="4gS-17-Rpx" secondAttribute="height" id="Nha-25-Za3"/>
+                <constraint firstItem="QMN-MJ-rVp" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="WKk-Qn-7e8"/>
+                <constraint firstItem="QMN-MJ-rVp" firstAttribute="width" secondItem="4gS-17-Rpx" secondAttribute="width" id="YS9-GR-yLG"/>
+                <constraint firstItem="QMN-MJ-rVp" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-75" id="pXu-ML-mvy"/>
+                <constraint firstItem="4gS-17-Rpx" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="75" id="vT0-HC-tll"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
