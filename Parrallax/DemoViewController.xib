@@ -21,15 +21,17 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gS-17-Rpx">
-                    <rect key="frame" x="168.5" y="403.5" width="38" height="30"/>
-                    <state key="normal" title="Long"/>
+                    <rect key="frame" x="101.5" y="398.5" width="172" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <state key="normal" title="2.4 Parallax Ratio"/>
                     <connections>
                         <action selector="longTapped:" destination="-1" eventType="touchUpInside" id="tIn-Bb-faN"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMN-MJ-rVp">
-                    <rect key="frame" x="168.5" y="253.5" width="38" height="30"/>
-                    <state key="normal" title="Short"/>
+                    <rect key="frame" x="101.5" y="248.5" width="172" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                    <state key="normal" title="1.3 Parallax Ratio"/>
                     <connections>
                         <action selector="shortTapped:" destination="-1" eventType="touchUpInside" id="uow-3l-W11"/>
                     </connections>
